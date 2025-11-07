@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comunidade Cristã Missão Reviver</title>
+
+  <!-- Font Awesome (ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- Substitua a URL abaixo por 'logo.png' se preferir salvar localmente -->
+        <img src="https://cdn.abacus.ai/images/0d08f1c0-4c06-4e8f-9566-bf0ba83098ff.png" alt="Logo Comunidade Reviver" class="logo-img"/>
+        <div>
+          <h1>Comunidade Cristã<br/><span>Missão Reviver</span></h1>
+        </div>
+      </div>
+
+      <!-- Navegação (desktop) -->
+      <nav>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#events">Eventos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Toggle mobile (aparece em <900px) -->
+      <div class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <h2>Bem-vindo à Comunidade Cristã Missão Reviver</h2>
+        <p>Somos uma comunidade dedicada ao avivamento, discipulado e ao amor de Cristo. Venha nos visitar e fazer parte dessa família.</p>
+        <div>
+          <a class="btn" href="#events">Próximos Eventos</a>
+          <a class="btn btn-outline" href="#contact">Entre em Contato</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-title"><h2>Sobre Nós</h2></div>
+        <div class="about">
+          <div class="text">
+            <h3>Missão Reviver - Uma comunidade de fé</h3>
+            <p>Nossa igreja tem a missão de levar o evangelho, promover avivamento espiritual e servir nossa comunidade com amor. Oferecemos ministérios para todas as idades e fases da vida.</p>
+            <p>Endereço, horários e ministérios podem ser atualizados conforme necessário no rodapé ou na seção de contato.</p>
+          </div>
+          <div class="image">
+            <!-- Imagem ilustrativa; troque pela foto da igreja se quiser -->
+            <img src="https://cdn.abacus.ai/images/0d08f1c0-4c06-4e8f-9566-bf0ba83098ff.png" alt="Logo como imagem ilustrativa" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+      <div class="container">
+        <div class="section-title"><h2>Próximos Eventos</h2></div>
+
+        <div class="events-grid">
+          <article class="card">
+            <div class="img"><img src="https://cdn.abacus.ai/images/0d08f1c0-4c06-4e8f-9566-bf0ba83098ff.png" alt="Culto Dominical"></div>
+            <div class="content">
+              <div class="event-date"><i class="fas fa-calendar-alt"></i> Todo Domingo - 18h</div>
+              <h3>Culto de Adoração</h3>
+              <p>Um encontro para louvor, adoração e mensagem bíblica relevante para sua vida.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="img"><img src="https://cdn.abacus.ai/images/0d08f1c0-4c06-4e8f-9566-bf0ba83098ff.png" alt="Escola Bíblica"></div>
+            <div class="content">
+              <div class="event-date"><i class="fas fa-calendar-alt"></i> Quartas - 19h30</div>
+              <h3>Escola Bíblica</h3>
+              <p>Estudo das Escrituras para crescimento e aprofundamento da fé.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="img"><img src="https://cdn.abacus.ai/images/0d08f1c0-4c06-4e8f-9566-bf0ba83098ff.png" alt="Retiro"></div>
+            <div class="content">
+              <div class="event-date"><i class="fas fa-calendar-alt"></i> 15-17 Nov</div>
+              <h3>Retiro Espiritual</h3>
+              <p>Fim de semana de comunhão e renovação espiritual.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-title"><h2>Entre em Contato</h2></div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h4>Visite nossa igreja</h4>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Endereço</strong>
+                <div>Rua da Fé, 123 - Centro<br/>Cidade, Estado - CEP: 12345-678</div>
+              </div>
+            </div>
+
+            <div class="contact-item"><i class="fas fa-phone"></i>
+              <div>
+                <strong>Telefone</strong>
+                <div>(11) 1234-5678</div>
+              </div>
+            </div>
+
+            <div class="contact-item"><i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <div>contato@missaoreviver.org</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4>Envie uma mensagem</h4>
+            <form id="contactForm">
+              <div class="form-group">
+                <input id="name" type="text" placeholder="Nome completo" required/>
+              </div>
+              <div class="form-group">
+                <input id="email" type="email" placeholder="Seu email" required/>
+              </div>
+              <div class="form-group">
+                <input id="subject" type="text" placeholder="Assunto" required/>
+              </div>
+              <div class="form-group">
+                <textarea id="message" placeholder="Mensagem" required></textarea>
+              </div>
+              <button class="btn" type="submit">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Comunidade Cristã Missão Reviver</h4>
+          <p>Avivamento, discipulado e serviço. Junte-se a nós para crescer na fé e servir a comunidade.</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Links Rápidos</h4>
+          <ul style="list-style:none;padding-left:0;margin-top:8px;color:rgba(255,255,255,0.9)">
+            <li><a href="#home" style="color:inherit;text-decoration:none">Início</a></li>
+            <li><a href="#about" style="color:inherit;text-decoration:none">Sobre</a></li>
+            <li><a href="#events" style="color:inherit;text-decoration:none">Eventos</a></li>
+            <li><a href="#contact" style="color:inherit;text-decoration:none">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Ministérios</h4>
+          <ul style="list-style:none;padding-left:0;margin-top:8px;color:rgba(255,255,255,0.9)">
+            <li>Louvor e Adoração</li>
+            <li>Escola Bíblica</li>
+            <li>Ministério Infantil</li>
+            <li>Missões</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Boletim</h4>
+          <p>Receba notícias e avisos por email.</p>
+          <form onsubmit="event.preventDefault();alert('Inscrito com sucesso!');">
+            <div style="margin-bottom:8px">
+              <input type="email" placeholder="Seu email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.12)"/>
+            </div>
+            <button class="btn" type="submit">Inscrever</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; <span id="year"></span> Comunidade Cristã Missão Reviver — Todos os direitos reservados
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
